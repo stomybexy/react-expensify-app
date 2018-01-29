@@ -16,6 +16,7 @@ store.subscribe(() => {
     console.log(getVisibleExpenses(expenses, filters));
 });
 
+
 const jsx = (
     <Provider store={store}>
         <AppRouter/>
