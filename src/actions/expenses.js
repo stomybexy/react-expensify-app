@@ -1,4 +1,5 @@
 import databse from '../firebase/firebase';
+import * as FirebaseUtils from './firebase-utils';
 
 // ADD_EXPENSE
 
@@ -39,3 +40,19 @@ export const editExpense = (id, updates) => ( {
     id,
     updates
 } );
+
+// SET_EXPENSES
+export const setExpenses = (expenses) => ( {
+    type: 'SET_EXPENSES',
+    expenses
+} );
+
+export const startSetExpenses = () => {
+    return (dispatch) => {
+        return databse.ref('expenses')
+            .once('value')
+            .then(dataSnapshot => {
+                dispatch(setExpenses(FirebaseUtils.toArray(dataSnapshot)));
+            });
+    }
+};
