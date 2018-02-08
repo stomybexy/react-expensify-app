@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 import { startEditExpense, startRemoveExpense } from '../actions/expenses';
+import ConfirmButton from './ConfirmButton';
 
 export class EditExpensePage extends React.Component {
     onSubmit = (expense) => {
@@ -26,11 +27,14 @@ export class EditExpensePage extends React.Component {
                         expense={this.props.expense}
                         onSubmit={this.onSubmit}
                     />
-                    <button
+                    <ConfirmButton
                         className="button button--secondary"
-                        onClick={this.onRemoveButtonClick}>
+                        onConfirm={this.onRemoveButtonClick}
+                        confirmTitle="Confirm removal"
+                        confirmMessage="Remove this expense ?"
+                    >
                         Remove Expense
-                    </button>
+                    </ConfirmButton>
                 </div>
             </div>
         );
