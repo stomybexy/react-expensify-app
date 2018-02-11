@@ -8,6 +8,7 @@ const ConfirmModal = (props) => (
         contentLabel={props.title}
         closeTimeoutMS={200}
         className="modal"
+        ariaHideApp={false}
     >
         <p className="modal__body">{props.message || 'Do you confirm ?'}</p>
 
