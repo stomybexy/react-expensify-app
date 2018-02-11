@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseSummary correctly with 1 expense 1`] = `
+exports[`should render ExpenseSummary correctly with 1 visible expense and 1 hidden expense 1`] = `
 <div
   className="page-header"
 >
@@ -21,6 +21,14 @@ exports[`should render ExpenseSummary correctly with 1 expense 1`] = `
         $94.34
       </span>
     </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      1
+       hidden 
+      expense
+       because of filters
+    </h3>
     <div
       className="page-header__actions"
     >
@@ -36,7 +44,95 @@ exports[`should render ExpenseSummary correctly with 1 expense 1`] = `
 </div>
 `;
 
-exports[`should render ExpenseSummary correctly with multiple expenses 1`] = `
+exports[`should render ExpenseSummary correctly with 1 visible expense and multiple hidden expenses 1`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       
+      expense
+       totaling 
+      <span>
+        $94.34
+      </span>
+    </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      5
+       hidden 
+      expenses
+       because of filters
+    </h3>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render ExpenseSummary correctly with multiple visible expenses and 1 hidden expense 1`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        2
+      </span>
+       
+      expenses
+       totaling 
+      <span>
+        $94.34
+      </span>
+    </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      1
+       hidden 
+      expense
+       because of filters
+    </h3>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render ExpenseSummary correctly with multiple visible expenses and multiple hidden expenses 1`] = `
 <div
   className="page-header"
 >
@@ -57,6 +153,14 @@ exports[`should render ExpenseSummary correctly with multiple expenses 1`] = `
         $198.45
       </span>
     </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+      10
+       hidden 
+      expenses
+       because of filters
+    </h3>
     <div
       className="page-header__actions"
     >
