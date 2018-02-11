@@ -8,10 +8,10 @@ export const LoginPage = ({ startLogin }) => (
             <h1 className="box-layout__title">Expensify</h1>
             <p>It's time to get your expenses under control</p>
             <div className="box-layout__actions">
-                <button className="button" onClick={() => startLogin('GOOGLE')}>
+                <button id="google" className="button" onClick={() => startLogin('GOOGLE')}>
                     Login with Google
                 </button>
-                <button className="button" onClick={() => startLogin('GITHUB')}>
+                <button id="github" className="button" onClick={() => startLogin('GITHUB')}>
                     Login with Github
                 </button>
             </div>

@@ -30,12 +30,14 @@ exports[`should render EditExpensePage correctly 1`] = `
       }
       onSubmit={[Function]}
     />
-    <button
+    <ConfirmButton
       className="button button--secondary"
-      onClick={[Function]}
+      confirmMessage="Remove this expense ?"
+      confirmTitle="Confirm removal"
+      onConfirm={[Function]}
     >
       Remove Expense
-    </button>
+    </ConfirmButton>
   </div>
 </div>
 `;

@@ -13,10 +13,10 @@ const ConfirmModal = (props) => (
         <p className="modal__body">{props.message || 'Do you confirm ?'}</p>
 
         <div className="modal__actions">
-            <button className="button" onClick={props.onCancel}>
+            <button id="no" className="button" onClick={props.onCancel}>
                 No
             </button>
-            <button className="button  button--danger" onClick={props.onConfirm}>
+            <button id="yes" className="button  button--danger" onClick={props.onConfirm}>
                 Yes
             </button>
         </div>

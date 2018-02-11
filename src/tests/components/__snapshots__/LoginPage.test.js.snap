@@ -13,14 +13,26 @@ exports[`should render correctly LoginPage 1`] = `
       Expensify
     </h1>
     <p>
-      It's time to get your expensises under control
+      It's time to get your expenses under control
     </p>
-    <button
-      className="button"
-      onClick={[Function]}
+    <div
+      className="box-layout__actions"
     >
-      Login with Google
-    </button>
+      <button
+        className="button"
+        id="google"
+        onClick={[Function]}
+      >
+        Login with Google
+      </button>
+      <button
+        className="button"
+        id="github"
+        onClick={[Function]}
+      >
+        Login with Github
+      </button>
+    </div>
   </div>
 </div>
 `;

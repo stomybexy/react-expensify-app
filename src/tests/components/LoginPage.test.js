@@ -13,7 +13,11 @@ test('should render correctly LoginPage', () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test('should call startLogin on button click', () => {
-    wrapper.find('button').simulate('click');
-    expect(startLogin).toHaveBeenCalled();
+test('should call startLogin with google on google button click', () => {
+    wrapper.find('#google').simulate('click');
+    expect(startLogin).toHaveBeenLastCalledWith('GOOGLE');
+});
+test('should call startLogin with github on github button click', () => {
+    wrapper.find('#github').simulate('click');
+    expect(startLogin).toHaveBeenLastCalledWith('GITHUB');
 });

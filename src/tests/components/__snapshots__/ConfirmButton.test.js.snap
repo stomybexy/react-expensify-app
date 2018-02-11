@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ConfirmButton correctly 1`] = `
+<div>
+  <button
+    className="button button--secondary"
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+  <ConfirmModal
+    isOpen={false}
+    message="Remove this item ?"
+    onCancel={[Function]}
+    onConfirm={[Function]}
+    title="Confirm removal"
+  />
+</div>
+`;
