@@ -8,6 +8,15 @@
   width: 100vw;
 }
 
+.box-layout__actions {
+  display: flex;
+  flex-direction: column;
+
+  button:not(:first-child) {
+    margin-top: $s-size;
+  }
+}
+
 .box-layout__box {
   background: fade-out(white, .15);
   border-radius: 3px;
